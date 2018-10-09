@@ -2,7 +2,7 @@
   "name": "pokemon-express",
   "version": "1.0.0",
   "description": "Express app using pokemon to learn CRUD",
-  "main": "server.js",
+  "main": "pokemon.js",
   "scripts": {
     "test": "mocha --exit"
   },
@@ -14,7 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "node": "^10.11.0"
   }
 }

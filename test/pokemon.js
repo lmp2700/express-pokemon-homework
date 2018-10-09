@@ -3,6 +3,7 @@ const supertest = require('supertest');
 const app = require('../server');
 const should = chai.should()
 const cheerio = require('cheerio');
+port = 3000;
 
 describe('pokemon routes index and show', function(){
     it('displays all pokemon at the index route', function(done){
@@ -37,4 +38,8 @@ describe('pokemon routes index and show', function(){
             firstHref.should.be.eq('/pokemon/0')
         })
     })
+})
+
+app.listen(3000, () => {
+    console.log("listening on port 3000")
 })
