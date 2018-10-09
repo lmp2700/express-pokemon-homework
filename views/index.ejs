@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Document</title>
+    
+    <style>
+  h1 {color:gray;}
+  ul {color:red;}
+  font-family {'Roboto', sans-serif}
+  </style>
+  
+</head>
+<body>
+
+<h2>Pokemon</h2>
+<ul class="pokemon">
+<% for(i = 0; i < pokemon.length; i++) { %>
+    <li><a href=""><%= pokemon[i].name %></a></li>
+<% } %>
+
+</ul>
+</body>
+</html>
