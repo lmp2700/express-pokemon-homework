@@ -4,5 +4,9 @@ body {
 }
 
 .h2 {
+    color: gray;
+}
 
+li {
+    color: red;
 }
