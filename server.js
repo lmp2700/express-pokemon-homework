@@ -7,15 +7,23 @@ app.use(express.static('public'))
 // create a get route /pokemon that will res.send(pokemon), which will display your pokemon data as json in the browser
 
 app.get('/', (req, res) => {
-    res.send('hi')
+    res.send(Pokemon)
 });
 
 app.get('/pokemon', (req, res) => {
     res.render('index.ejs', {pokemon: Pokemon});
 });
 
-// Add some style to your list with a style tag, or, for an added challenge, look up how to serve static files in an 
-// express app and use a separate css file instead.
+app.get('/pokemon/:id', (req, res) => {
+    res.render('show.ejs', {
+    pokemon: Pokemon[req.params.id]
+    });
+});
+
+// This route should serve a template called show.ejs which displays the information of a specific pokemon according 
+// to their index in the pokemon array. For example, /pokemon/0 should display the 0 indexed pokemon.
+// You may want to look up how to access route parameters in express.
+
 
 // Stretch step, not required : Choose a google font and add it to your html and inside your <style> tag
 
