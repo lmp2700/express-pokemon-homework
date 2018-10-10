@@ -1,12 +1,17 @@
 body {
     background-color: gray;
     font-family: 'Roboto', sans-serif;
+    align-content: center;
 }
 
 .h2 {
-    color: gray;
+    background-color: red;
+    color: black;
+    align-content: center;
+    text-align: center;
 }
 
 li {
-    color: red;
+    color: black;
+    text-align: center;
 }
