@@ -7,16 +7,19 @@
 <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="/style.css">
-<title>View your Pokemon</title>
+<title>New Pokemon</title>
 </head>
-
 <body>
 
-<h1>Hi! I am <%= pokemon.name %></h1>
-   <img src="<%= pokemon.img %>"/></li>
-   <form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
-    <input type="submit" value="DELETE"/>
-        </form>
-        <a href="/pokemon/<%= i %>/edit">Edit Your Pokemon</a>
+<h2>Add new Pokemon</h2>
+
+<form action="/pokemon" method="POST">
+Name: <input type="text" name="name"> <br/>
+Image: <input type="text" name="img"> <br/>
+<input type="submit">
+</form>
+
+
+
 </body>
 </html>
